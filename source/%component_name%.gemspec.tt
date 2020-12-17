@@ -5,9 +5,9 @@ Gem::Specification.new do |s|
   s.summary = " "
   s.description = " "
 
-  s.authors = ["email@domain.com"]
-  s.homepage = "http://domain.com"
-  s.licenses = ["TODO"]
+  s.authors = ['Jane Technologies']
+  s.homepage = 'http://iheartjane.com'
+  s.licenses = ['Proprietary']
 
   s.require_paths = ["lib"]
   s.files = Dir.glob("{lib}/**/*")

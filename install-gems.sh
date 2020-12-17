@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+POSTURE='development'
+
 set -euo pipefail
 
 function boolean-var {

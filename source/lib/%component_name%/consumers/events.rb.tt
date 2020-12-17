@@ -1,5 +1,3 @@
-# Consumer user guide: http://docs.eventide-project.org/user-guide/consumers.html
-
 module <%= component_constant_name %>
   module Consumers
     class Events

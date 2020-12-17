@@ -12,7 +12,7 @@ rm -f Gemfile.lock
 POSTURE=development ./install-gems.sh
 
 rm -rfv *-component
-bundle exec evt component something_component
+bundle exec jane-evt component something_component
 
 pushd ./something-component
 POSTURE=development ./install-gems.sh

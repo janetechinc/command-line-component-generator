@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+POSTURE='development'
+
 set -e
 
 if [ -z ${POSTURE+x} ]; then
