@@ -1,0 +1,21 @@
+module <%= component_constant_name %>
+  module Controls
+    module Position
+      def self.example
+        Processed.example
+      end
+
+      module Processed
+        def self.example
+          12
+        end
+      end
+
+      module NotProcessed
+        def self.example
+          11
+        end
+      end
+    end
+  end
+end
