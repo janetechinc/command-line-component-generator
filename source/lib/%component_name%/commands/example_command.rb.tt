@@ -1,0 +1,39 @@
+# TODO This is an example client command with validation. Can be removed or updated with the arguments needed for construction
+# module <%= component_constant_name %>
+#   module Commands
+#     class ExampleCommand
+#       include Command
+
+#       def self.call(param1:, previous_message: nil)
+#         instance = self.build
+#         instance.(param1: param1, previous_message: previous_message)
+#       end
+
+#       def call(param1:, previous_message: nil)
+#         data = {
+#           param1: param1,
+#           time: clock.iso8601,
+#         }
+
+#         merge = self.class.build_message(Messages::Commands::ExampleCommand, previous_message, data)
+
+#         violations = []
+#         valid = Validate.(merge, violations)
+
+#         unless valid
+#           violations.each do |violation|
+#             logger.error { "ExampleCommand command validation error (Message: #{violation})" }
+#           end
+
+#           raise ValidationError.build("ExampleCommand command failed", violations)
+#         end
+
+#         stream_name = command_stream_name(product_id)
+
+#         write.(merge, stream_name)
+
+#         merge
+#       end
+#     end
+#   end
+# end

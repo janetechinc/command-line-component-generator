@@ -14,4 +14,11 @@ require "<%= component_name %>/handlers/events"
 require "<%= component_name %>/consumers/commands"
 require "<%= component_name %>/consumers/events"
 
+# TODO Client commands, remove if unneeded
+# require "<%= component_name %>/commands/command/validation_error"
+# require "<%= component_name %>/commands/command"
+
+# TODO Load client commands
+# require "<%= component_name %>/commands/example_command"
+
 require "<%= component_name %>/start"

@@ -17,3 +17,5 @@ require "entity_projection/fixtures"
 require "schema/fixtures"
 
 include <%= component_constant_name %>
+
+require_relative './fixtures/fixtures_init'

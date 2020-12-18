@@ -1,0 +1,18 @@
+module <%= component_constant_name %>
+  module Commands
+    module Command
+      class ValidationError < RuntimeError
+        def violations
+          @violations ||= []
+        end
+        attr_writer :violations
+
+        def self.build(message, violations=nil)
+          instance = new(message)
+          instance.violations = violations unless violations.nil?
+          instance
+        end
+      end
+    end
+  end
+end
