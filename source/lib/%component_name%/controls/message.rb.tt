@@ -1,0 +1,5 @@
+module <%= component_constant_name %>
+  module Controls
+    Message = Messaging::Controls::Message
+  end
+end

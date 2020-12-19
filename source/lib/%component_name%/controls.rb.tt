@@ -2,6 +2,7 @@ require "clock/controls"
 require "identifier/uuid/controls"
 
 require "<%= component_name %>/controls/id"
+require "<%= component_name %>/controls/message"
 require "<%= component_name %>/controls/position"
 require "<%= component_name %>/controls/time"
 require "<%= component_name %>/controls/version"
