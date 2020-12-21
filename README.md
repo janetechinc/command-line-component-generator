@@ -15,3 +15,14 @@ $ jane-evt component something_component
 ```
 $ gem install jane-evt-generator --source https://TOKEN@gem.fury.io/USERNAME/
 ```
+
+## Development
+
+To build a new version of the gem, use the following commands:
+
+```bash
+gem install gemfury # If never done before
+fury login # If never done before
+gem build jane-evt-generator.gemspec
+fury push --as=iheartjane jane-evt-generator-*.gem
+```
