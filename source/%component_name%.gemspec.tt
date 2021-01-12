@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 2.4"
 
   s.add_runtime_dependency "eventide-postgres"
+  s.add_runtime_dependency "error_telemetry-client"
 
   s.add_development_dependency "evt-messaging-fixtures"
   s.add_development_dependency "evt-entity_projection-fixtures"

@@ -4,6 +4,12 @@ require_relative "../init"
 
 require "component_host"
 
-ComponentHost.start("<%= service_name %>-component") do |host|
+component_name = "<%= service_name %>-component"
+
+ComponentHost.start(component_name) do |host|
   host.register(<%= component_constant_name %>::Start)
+  host.record_error do |error|
+    require "error_telemetry/client"
+    ErrorTelemetry::Client::Record.(error, component_name)
+  end
 end
